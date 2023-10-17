@@ -1,0 +1,14 @@
+- name: Hello
+  hosts: all
+  sources:
+    - ansible.eda.range:
+        limit: 100
+      filters:
+        - cloin.eda.poster:
+            webhook_url:  http://localhost:3331/webhook
+  rules:
+  - name: hi
+    condition: event.i is defined
+    action:
+      debug:
+        msg: "Hi {{event}}"
