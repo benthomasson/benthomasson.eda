@@ -5,7 +5,7 @@
         limit: 100
       filters:
         - cloin.eda.poster:
-            webhook_url:  http://localhost:3331/webhook
+            webhook_url:  http://localhost:8000/payloads
   rules:
   - name: hi
     condition: event.i is defined
