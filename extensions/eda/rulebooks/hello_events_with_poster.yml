@@ -4,8 +4,8 @@
     - ansible.eda.range:
         limit: 100
       filters:
-        - cloin.eda.poster:
-            webhook_url:  http://localhost:8000/payloads
+        - benthomasson.eda.poster:
+            webhook_url:  https://localhost:8000/payloads
   rules:
   - name: hi
     condition: event.i is defined
